@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+/* Styles for the main body of the application */
+body {
+  font-family: Arial, sans-serif; /* Set a clean sans-serif font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f5f5f5; /* Set a light grey background color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styles for the main heading */
+h1 {
+  text-align: center; /* Center-align the heading */
+  color: #333; /* Dark grey color for the text */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Styles for input fields */
+input {
+  margin: 10px; /* Add margin around the input field */
+  padding: 8px; /* Add padding inside the input field */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
+  width: calc(100% - 42px); /* Full width minus margins */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Styles for buttons */
+button {
+  margin: 10px; /* Add margin around the button */
+  padding: 10px; /* Add padding inside the button */
+  background-color: #007BFF; /* Bootstrap primary color */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
 }
 
-.App-link {
-  color: #61dafb;
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styles for error messages */
+.error {
+  color: red; /* Red color for error messages */
+  text-align: center; /* Center-align the error message */
+}
+
+/* Styles for the container */
+.container {
+  max-width: 600px; /* Set a maximum width for the container */
+  margin: 20px auto; /* Center the container */
+  padding: 20px; /* Add padding inside the container */
+  background-color: white; /* White background for the container */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners for the container */
+}
+
+/* Styles for lists */
+ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+/* Styles for list items */
+li {
+  padding: 10px; /* Add padding for list items */
+  border-bottom: 1px solid #eee; /* Light border between items */
+}
+
+li:last-child {
+  border-bottom: none; /* Remove border for the last item */
 }
